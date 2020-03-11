@@ -85,7 +85,8 @@ namespace tryCatch
           Console.WriteLine($"Email: {contact.Email}");
           Console.WriteLine($"Address: {contact.Address}");
         }
-        catch
+        // general exception catch and then storing it in a variable
+        catch (System.Exception ex)
         {
           Console.WriteLine($"Email: {email} is not found");
         }
